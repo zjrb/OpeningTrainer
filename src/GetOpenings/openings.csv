@@ -58,16 +58,16 @@
 56,Queen's Gambit Symmetrical and Baltic,1.d4 d5 2.c4 c51.d4 d5 2.c4 Bf5
 57,Queen's Gambit Albin Counter-Gambit,1.d4 d5 2.c4 e5
 58,"Queen's Gambit, Chigorin",1.d4 d5 2.c4 Nc6
-59,"Queen's Gambit, Slav Other 3rd and 4th moves","1.d4 d5 2.c4 c6 3. Nf3 dxc41.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Qc2, Qb3, g3, Nbd2"
+59,"Queen's Gambit, Slav Other 3rd and 4th moves","1.d4 d5 2.c4 c6 3. Nf3 dxc4, 1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Qc2, Qb3, g3, Nbd2"
 60,"Queen's Gambit, Slav, Exchange",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4.cxd5 cxd5 5. Nc3
 61,"Queen's Gambit, Slav, 4...a6",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 a6
-62,"Queen's Gambit, Slav Other 5th moves","1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.e4, e3, Ne5, g31.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.a4 Bg4, Na6, e6"
+62,"Queen's Gambit, Slav Other 5th moves","1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.e4, e3, Ne5, g3, 1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.a4 Bg4, Na6, e6"
 63,"Queen's Gambit, Slav, Main Line",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.a4 Bf5
 64,"Queen's Gambit Accepted, 3.e4",1.d4 d5 2.c4 dxc4 3.e4
 65,Queen's Gambit Accepted Other 3rd moves,"1.d4 d5 2.c4 dxc4 3. Nf3 a6, c5"
-66,Queen's Gambit Accepted Other 4th moves,"1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4. Nc3, Qa4+1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4.e3 Bg4, a6, g6, c5"
+66,Queen's Gambit Accepted Other 4th moves,"1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4. Nc3, Qa4+, 1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4.e3 Bg4, a6, g6, c5"
 67,Queen's Gambit Accepted Main Line,1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4.e3 e6 5. Bxc4 c5
-68,Queen's Gambit Declined Other 3rd and 4th moves,"1.d4 d5 2.c4 e6 3. Nf3 c51.d4 d5 2.c4 e6 3. Nc3 c6 4.e41.d4 d5 2.c4 e6 3. Nc3 c6 4. Nf3 dxc41.d4 d5 2.c4 e6 3. Nc3 c6 4.cxd5 exd51.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 Nbd7, Bb4"
+68,Queen's Gambit Declined Other 3rd and 4th moves,"1.d4 d5 2.c4 e6 3. Nf3 c5, 1.d4 d5 2.c4 e6 3. Nc3 c6 4.e4, 1.d4 d5 2.c4 e6 3. Nc3 c6 4. Nf3 dxc4, 1.d4 d5 2.c4 e6 3. Nc3 c6 4.cxd5 exd5, 1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 Nbd7, Bb4"
 69,Queen's Gambit Declined Tarrasch,1.d4 d5 2.c4 e6 3. Nc3 c5
 70,Queen's Gambit Declined Exchange,1.d4 d5 2.c4 e6 3. Nc3 Nf6 4.cxd5
 71,"Queen's Gambit Declined, 5. f4",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4
@@ -80,7 +80,7 @@
 78,"Queen's Gambit Declined Orthodox, Main Line",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Bg5 Be7
 79,Owen Defense,1.e4 b6
 80,Nimzowitsch Defense,1.e4 Nc6
-81,"Scandinavian, 2... xd5 3... d6 and 3... d8",1.e4 d5 2.exd5 Qxd5 3. Nc3 Qd61.e4 d5 2.exd5 Qxd5 3. Nc3 Qd8
+81,"Scandinavian, 2... xd5 3... d6 and 3... d8","1.e4 d5 2.exd5 Qxd5 3. Nc3 Qd6, 1.e4 d5 2.exd5 Qxd5 3. Nc3 Qd8"
 82,"Scandinavian, 2... xd5, 3... a5",1.e4 d5 2.exd5 Qxd5 3. Nc3 Qa5
 83,"Scandinavian, 2... f6 3.d4",1.e4 d5 2.exd5 Nf6 3.d4
 84,"Scandinavian, 2... f6 Other","1.e4 d5 2.exd5 Nf6 3.c4, Bb5+, Nc3, Nf3, Bc4"
