@@ -1,0 +1,232 @@
+,Opening,Notation
+0,Modern,1.d4 d6 2.c4 g6 3. Nc3 Bg7 4.e4
+1,Semi-Benoni,1.d4 c5 2.d5 e5
+2,"Trompowsky, 2... e4",1.d4 Nf6 2. Bg5 Ne4
+3,"Trompowsky, 2...e6",1.d4 Nf6 2. Bg5 e6
+4,"Trompowsky, Other","1.d4 Nf6 2. Bg5 d5, c5, g6"
+5,"Torre, 2...e6",1.d4 Nf6 2. Nf3 e6 3. Bg5
+6,"Torre, 2...g6",1.d4 Nf6 2. Nf3 g6 3. Bg5
+7,"London System, 2...e6",1.d4 Nf6 2. Nf3 e6 3. Bf4
+8,"London System, 2...g6",1.d4 Nf6 2. Nf3 g6 3. Bf4
+9,"Catalan, 3... b4",1.d4 Nf6 2.c4 e6 3.g3 Bb4+
+10,"Catalan, 3...c5",1.d4 Nf6 2.c4 e6 3.g3 c5
+11,"Catalan, Open",1.d4 Nf6 2.c4 e6 3.g3 d5 4. Bg2 dxc4
+12,"Catalan, Closed",1.d4 Nf6 2.c4 e6 3.g3 d5 4. Bg2 Be7 5. Nf3
+13,Black Knights Tango,1.d4 Nf6 2.c4 Nc6
+14,Budapest Gambit,1.d4 Nf6 2.c4 e5
+15,Old Indian,1.d4 Nf6 2.c4 d6
+16,Czech Benoni,1.d4 Nf6 2.c4 c5 3.d5 e5 4. Nc3 d6
+17,Benko (Volga) Gambit,1.d4 Nf6 2.c4 c5 3.d5 b5
+18,"Modern Benoni, 6. f3",1.d4 Nf6 2.c4 c5 3.d5 e6 4. Nc3 exd5 5.cxd5 d6 6. Nf3
+19,"Modern Benoni, 6.e4",1.d4 Nf6 2.c4 c5 3.d5 e6 4. Nc3 exd5 5.cxd5 d6 6.e4
+20,"Dutch, Leningrad",1.d4 f5 2.c4 Nf6 3.g3 g6 4. Bg2 Bg7 5. Nf3 O-O 6.O-O
+21,"Dutch, Classical",1.d4 f5 2.c4 Nf6 3.g3 e6 4. Bg2
+22,"Dutch, 3. c3",1.d4 f5 2.c4 Nf6 3. Nc3
+23,"Dutch, Other","1.d4 f5 2. Nc3, Bg5, e4"
+24,"Grunfeld, Fianchetto",1.d4 Nf6 2.c4 g6 3.g3 d5 4. Bg2 Bg7 5. Nf3 O-O 6.O-O
+25,"Grunfeld, 4. f3",1.d4 Nf6 2.c4 g6 3. Nc3 d5 4. Nf3
+26,"Grunfeld, Other","1.d4 Nf6 2.c4 g6 3. Nc3 d5 4. Bf4, Bg5, e3, Qb3"
+27,"Grunfeld, Exchange",1.d4 Nf6 2.c4 g6 3. Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7
+28,"Bogo-Indian, 4. d2",1.d4 Nf6 2.c4 e6 3. Nf3 Bb4+ 4. Bd2
+29,"Bogo-Indian, 4. bd2",1.d4 Nf6 2.c4 e6 3. Nf3 Bb4+ 4. Nbd2
+30,"Queen's Indian, 4.a3",1.d4 Nf6 2.c4 e6 3. Nf3 b6 4.a3
+31,"Queen's Indian, 4. c3",1.d4 Nf6 2.c4 e6 3. Nf3 b6 4. Nc3
+32,"Queen's Indian, 4.e3",1.d4 Nf6 2.c4 e6 3. Nf3 b6 4.e3
+33,"Queen's Indian, Other","1.d4 Nf6 2.c4 e6 3. Nf3 b6 4. Bg5, Bf4"
+34,"Queen's Indian, 4.g3  a6",1.d4 Nf6 2.c4 e6 3. Nf3 b6 4.g3 Ba6
+35,"Queen's Indian, 4.g3 Other","1.d4 Nf6 2.c4 e6 3. Nf3 b6 4.g3 Bb7, Bb4+"
+36,"Nimzo-Indian, 4. f3",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4. Nf3
+37,"Nimzo-Indian, Saemisch",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4.a3
+38,"Nimzo-Indian, Leningrad",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4. Bg5
+39,"Nimzo-Indian, 4.f3",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4.f3
+40,"Nimzo-Indian, Other 4th moves","1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4.g3, Qb3, Bd2"
+41,"Nimzo-Indian, Classical, 4...O-O",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4. Qc2 O-O
+42,"Nimzo-Indian, Classical, 4...c5",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4. Qc2 c5
+43,"Nimzo-Indian, Classical, Other","1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4. Qc2 d5, Nc6, b6, d6"
+44,"Nimzo-Indian, Rubinstein, 4...c5",1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4.e3 c5
+45,"Nimzo-Indian, Rubinstein, Other","1.d4 Nf6 2.c4 e6 3. Nc3 Bb4 4.e3 b6, d5, Nc6, Bxc3+"
+46,"King's Indian, Averbakh",1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Be2 O-O 6. Bg5
+47,"King's Indian, Fianchetto",1.c4 Nf6 2.d4 g6 3.g3 Bg7 4. Bg2 d6 5. Nf3 O-O
+48,"King's Indian, 4 Pawns Attack",1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5.f4
+49,"King's Indian, Saemisch",1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5.f3
+50,"King's Indian, Classical Main Line",1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 O-O 6. Be2 e5 7.O-O Nc6
+51,"King's Indian, Classical Other 7th moves","1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 O-O 6. Be2 e5 7. Be3, dxe5, Bg5, 1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 O-O 6. Be2 e5 7.O-O Nbd7, Na6, exd4, c6, Nh5, Qe8"
+52,"King's Indian, Classical Petrosian",1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 O-O 6. Be2 e5 7.d5
+53,"King's Indian, Classical Other 5th and 6th moves","1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 Bg4, Nbd7, c6, c5, 1.d4 Nf6 2.c4 g6 3. Nc3 Bg7 4.e4 d6 5. Nf3 O-O 6.h3, Be3, Bg5, Bd3, g3"
+54,Hogdson Attack,1.d4 d5 2. Bg5
+55,Colle System,1.d4 d5 2. Nf3 Nf6 3.e3
+56,Queen's Gambit Symmetrical and Baltic,1.d4 d5 2.c4 c51.d4 d5 2.c4 Bf5
+57,Queen's Gambit Albin Counter-Gambit,1.d4 d5 2.c4 e5
+58,"Queen's Gambit, Chigorin",1.d4 d5 2.c4 Nc6
+59,"Queen's Gambit, Slav Other 3rd and 4th moves","1.d4 d5 2.c4 c6 3. Nf3 dxc41.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Qc2, Qb3, g3, Nbd2"
+60,"Queen's Gambit, Slav, Exchange",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4.cxd5 cxd5 5. Nc3
+61,"Queen's Gambit, Slav, 4...a6",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 a6
+62,"Queen's Gambit, Slav Other 5th moves","1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.e4, e3, Ne5, g31.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.a4 Bg4, Na6, e6"
+63,"Queen's Gambit, Slav, Main Line",1.d4 d5 2.c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5.a4 Bf5
+64,"Queen's Gambit Accepted, 3.e4",1.d4 d5 2.c4 dxc4 3.e4
+65,Queen's Gambit Accepted Other 3rd moves,"1.d4 d5 2.c4 dxc4 3. Nf3 a6, c5"
+66,Queen's Gambit Accepted Other 4th moves,"1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4. Nc3, Qa4+1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4.e3 Bg4, a6, g6, c5"
+67,Queen's Gambit Accepted Main Line,1.d4 d5 2.c4 dxc4 3. Nf3 Nf6 4.e3 e6 5. Bxc4 c5
+68,Queen's Gambit Declined Other 3rd and 4th moves,"1.d4 d5 2.c4 e6 3. Nf3 c51.d4 d5 2.c4 e6 3. Nc3 c6 4.e41.d4 d5 2.c4 e6 3. Nc3 c6 4. Nf3 dxc41.d4 d5 2.c4 e6 3. Nc3 c6 4.cxd5 exd51.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 Nbd7, Bb4"
+69,Queen's Gambit Declined Tarrasch,1.d4 d5 2.c4 e6 3. Nc3 c5
+70,Queen's Gambit Declined Exchange,1.d4 d5 2.c4 e6 3. Nc3 Nf6 4.cxd5
+71,"Queen's Gambit Declined, 5. f4",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4
+72,"Queen's Gambit Declined Semi-Tarrasch, 5.e3  c6",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 c5 5.e3 Nc6
+73,"Queen's Gambit Declined Semi-Tarrasch, Main Line",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 c5 5.cxd5
+74,"Queen's Gambit Declined Semi-Slav, Other 5th moves","1.d4 d5 2.c4 e6 3. Nf3 Nf6 4. Nc3 c6 5. Qb3, Bf4"
+75,"Queen's Gambit Declined Semi-Slav, Botvinnik",1.d4 d5 2.c4 e6 3. Nf3 Nf6 4. Nc3 c6 5. Bg5
+76,"Queen's Gambit Declined Semi-Slav, Meran and Anti-Meran",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Nf3 c6 5.e3
+77,"Queen's Gambit Declined Orthodox, Other 4th moves","1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7, c5, Bb4"
+78,"Queen's Gambit Declined Orthodox, Main Line",1.d4 d5 2.c4 e6 3. Nc3 Nf6 4. Bg5 Be7
+79,Owen Defense,1.e4 b6
+80,Nimzowitsch Defense,1.e4 Nc6
+81,"Scandinavian, 2... xd5 3... d6 and 3... d8",1.e4 d5 2.exd5 Qxd5 3. Nc3 Qd61.e4 d5 2.exd5 Qxd5 3. Nc3 Qd8
+82,"Scandinavian, 2... xd5, 3... a5",1.e4 d5 2.exd5 Qxd5 3. Nc3 Qa5
+83,"Scandinavian, 2... f6 3.d4",1.e4 d5 2.exd5 Nf6 3.d4
+84,"Scandinavian, 2... f6 Other","1.e4 d5 2.exd5 Nf6 3.c4, Bb5+, Nc3, Nf3, Bc4"
+85,"Alekhine, 2. c3 d5",1.e4 Nf6 2. Nc3 d5
+86,"Alekhine, Other 3rd moves","1.e4 Nf6 2.e5 Nd5 3.c4, Nc3, Nf3, Bc4, g3"
+87,"Alekhine, Exchange",1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.exd6
+88,"Alekhine, Four Pawns Attack",1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.f4
+89,"Alekhine, Modern",1.e4 Nf6 2.e5 Nd5 3.d4 d6 4. Nf3
+90,"Modern, 3. f3",1.e4 g6 2.d4 Bg7 3. Nf3
+91,"Modern, 3. c3 d6",1.e4 g6 2.d4 Bg7 3. Nc3 d6
+92,"Modern, 3. c3 c6",1.e4 g6 2.d4 Bg7 3. Nc3 c6
+93,"Modern, 3. c3 Other","1.e4 g6 2.d4 Bg7 3. Nc3 c5, a6, d5, Nc6"
+94,"Modern, Other 3rd moves","1.e4 g6 2.d4 Bg7 3.c3, f4, Be3, Bc4"
+95,"Pirc, Other White 3rd moves","1.e4 d6 2.d4 Nf6 3. Bd3, f3, Nd2"
+96,"Pirc, Other Black 3rd moves","1.e4 d6 2.d4 Nf6 3. Nc3 c6, e5, Nbd7"
+97,"Pirc, Austrian Attack",1.e4 d6 2.d4 Nf6 3. Nc3 g6 4.f4
+98,"Pirc, Other White 4th moves","1.e4 d6 2.d4 Nf6 3. Nc3 g6 4. Be3, Bg5, f3, g3, Be2"
+99,"Pirc, Classical",1.e4 d6 2.d4 Nf6 3. Nc3 g6 4. Nf3
+100,"Caro-Kann, 2.c4",1.e4 c6 2.c4
+101,"Caro-Kann, Two Knights",1.e4 c6 2. Nc3 d5 3. Nf3
+102,"Caro-Kann, Exchange",1.e4 c6 2.d4 d5 3.exd5 cxd5 4. Bd3
+103,Caro-Kann Panov-Botvinnik Attack,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4
+104,"Caro-Kann, Advance",1.e4 c6 2.d4 d5 3.e5
+105,"Caro-Kann, 4... f6",1.e4 c6 2.d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6
+106,"Caro-Kann, 4... d7",1.e4 c6 2.d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7
+107,"Caro-Kann, Classical",1.e4 c6 2.d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5
+108,"French, King's Indian Attack",1.e4 e6 2.d3
+109,"French, Other 2nd moves","1.e4 e6 2. Nf3, Qe2, Nc3, b3, c4"
+110,"French, Exchange",1.e4 e6 2.d4 d5 3.exd5
+111,"French, Advance",1.e4 e6 2.d4 d5 3.e5 c5 4.c3
+112,"French, Tarrasch Other 3rd moves","1.e4 e6 2.d4 d5 3. Nd2 Nc6, Be7, a6"
+113,"French, Tarrasch, 3...c5",1.e4 e6 2.d4 d5 3. Nd2 c5
+114,"French, Tarrasch, 3... f6",1.e4 e6 2.d4 d5 3. Nd2 Nf6
+115,"French, Rubinstein",1.e4 e6 2.d4 d5 3. Nc3 dxe4 4. Nxe4
+116,"French, Winawer Other White 4th moves","1.e4 e6 2.d4 d5 3. Nc3 Bb4 4. Ne2, exd5, Bd3, a3"
+117,"French, Winawer Other Black 4th moves","1.e4 e6 2.d4 d5 3. Nc3 Bb4 4.e5 Ne7, b6, Qd7"
+118,"French, Winawer, Main Line",1.e4 e6 2.d4 d5 3. Nc3 Bb4 4.e5 c5
+119,"French, Steinitz",1.e4 e6 2.d4 d5 3. Nc3 Nf6 4.e5
+120,"French, MacCutcheon",1.e4 e6 2.d4 d5 3. Nc3 Nf6 4. Bg5 Bb4
+121,"French, Burn",1.e4 e6 2.d4 d5 3. Nc3 Nf6 4. Bg5 dxe4
+122,"French, Classical",1.e4 e6 2.d4 d5 3. Nc3 Nf6 4. Bg5 Be7
+123,Sicilian Miscellaneous 2nd moves,"1.e4 c5 2.d3, b3, c4, g3, Ne2, Bc4, b4"
+124,"Sicilian, 2.f4",1.e4 c5 2.f4
+125,"Sicilian, Smith-Morra Gambit",1.e4 c5 2.d4 cxd4 3.c3
+126,"Sicilian, Alapin, Other 2nd moves","1.e4 c5 2.c3 e6, d6, g6, e5, b6, Nc6, Qa5"
+127,"Sicilian, Alapin, 2... f6",1.e4 c5 2.c3 Nf6
+128,"Sicilian, Alapin, 2...d5",1.e4 c5 2.c3 d5
+129,"Sicilian, 2. c2 e6",1.e4 c5 2. Nc3 e6
+130,"Sicilian, 2. c2 d6",1.e4 c5 2. Nc3 d6
+131,"Sicilian, Grand Prix Attack",1.e4 c5 2. Nc3 Nc6 3.f4
+132,"Sicilian, Closed Other 3rd moves","1.e4 c5 2. Nc3 Nc6 3. Nf3, Nge2, Bb5"
+133,"Sicilian, Closed, Main Line",1.e4 c5 2. Nc3 Nc6 3.g3
+134,"Sicilian, 2. f3, Other 2nd moves","1.e4 c5 2. Nf3 g6, a6, Nf6"
+135,"Sicilian, Rossolimo",1.e4 c5 2. Nf3 Nc6 3. Bb5
+136,"Sicilian, 2... c6 4... c7 and 4... b6","1.e4 c5 2. Nf3 Nc6 3.d4 cxd4 4. Nxd4 Qc7, Qb6"
+137,"Sicilian, Lowenthal",1.e4 c5 2. Nf3 Nc6 3.d4 cxd4 4. Nxd4 e5
+138,"Sicilian, 2...Nc6, Other 5th moves","1.e4 c5 2. Nf3 Nc6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6, a6, Qb6"
+139,"Sicilian, Accelerated Dragon",1.e4 c5 2. Nf3 Nc6 3.d4 cxd4 4. Nxd4 g6
+140,"Sicilian, Sveshnikov (Pelican)",1.e4 c5 2. Nf3 Nc6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6
+141,"Sicilian, Kan (Paulsen) Other 5th moves","1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 a6 5. Be2, Be3, g3"
+142,"Sicilian, Kan (Paulsen), 5.c4",1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 a6 5.c4
+143,"Sicilian, Kan (Paulsen), 5. c3",1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 a6 5. Nc3
+144,"Sicilian, Kan (Paulsen), 5. d3",1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 a6 5. Bd3
+145,"Sicilian, Taimanov Other 5th moves","1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 Nc6 5. Be3, Nxc6, c4, Be2, g3"
+146,"Sicilian, Taimanov, 5. b5",1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 Nc6 5. Nb5
+147,"Sicilian, Taimanov, Main Line",1.e4 c5 2. Nf3 e6 3.d4 cxd4 4. Nxd4 Nc6 5. Nc3
+148,"Sicilian, Moscow Variation",1.e4 c5 2. Nf3 d6 3. Bb5+
+149,"Sicilian, 2...d6, 4. xd4",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Qxd4
+150,"Sicilian, Dragon Other 6th moves","1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6.g3, f4, f3, Bg5"
+151,"Sicilian, Dragon 6. e2 and 6. c4","1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2, Bc4"
+152,"Sicilian, Dragon Yugoslav Attack",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7.f3
+153,"Sicilian, Classical Other 6th moves","1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Be2, Be3, f3, g3, f4"
+154,"Sicilian, Classical, Sozin",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bc4
+155,"Sicilian, Classical Richter-Rauzer",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5
+156,"Sicilian, Scheveningen",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 e6
+157,"Sicilian, Najdorf, 6.a4",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6.a4
+158,"Sicilian, Najdorf, 6.g3",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6.g3
+159,"Sicilian, Najdorf, 6.f3",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6.f3
+160,"Sicilian, Najdorf, 6.f4",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6.f4
+161,"Sicilian, Najdorf 6. c4 (Fischer-Sozin)",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4
+162,"Sicilian, Najdorf, 6. e3",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3
+163,"Sicilian, Najdorf, 6. e2",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2
+164,"Sicilian, Najdorf 6. g5 (Main Line)",1.e4 c5 2. Nf3 d6 3.d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5
+165,Center Game and Danish Gambit,1.e4 e5 2.d4 exd4
+166,Bishop's Opening,1.e4 e5 2. Bc4
+167,King's Gambit,1.e4 e5 2.f4
+168,Vienna,1.e4 e5 2. Nc3
+169,Latvian Gambit and Elephant Gambit,"1.e4 e5 2. Nf3 f5, d5"
+170,Philidor,1.e4 e5 2. Nf3 d6
+171,"Petroff, Other 3rd moves","1.e4 e5 2. Nf3 Nf6 3. Nc3, d4, d3, Bc4"
+172,"Petroff, Main Line",1.e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4
+173,Ponziani,1.e4 e5 2. Nf3 Nc6 3.c3
+174,Three Knights,"1.e4 e5 2. Nf3 Nc6 3. Nc3 Bc5, g6, d6, Bb4"
+175,Four Knights,1.e4 e5 2. Nf3 Nc6 3. Nc3 Nf6
+176,Goring Gambit,1.e4 e5 2. Nf3 Nc6 3.d4 exd4 4.c3
+177,Scotch Gambit,1.e4 e5 2. Nf3 Nc6 3.d4 exd4 4. Bc4
+178,"Scotch, Other 4th moves","1.e4 e5 2. Nf3 Nc6 3.d4 exd4 4. Nxd4 Qh4, Nxd4, Qf6, Bb4+, d6, g6"
+179,"Scotch, 4... f6",1.e4 e5 2. Nf3 Nc6 3.d4 exd4 4. Nxd4 Nf6
+180,"Scotch, 4... c5",1.e4 e5 2. Nf3 Nc6 3.d4 exd4 4. Nxd4 Bc5
+181,Hungarian,1.e4 e5 2. Nf3 Nc6 3. Bc4 Be7
+182,Two Knights,1.e4 e5 2. Nf3 Nc6 3. Bc4 Nf6
+183,Giuoco Piano (Italian Game),1.e4 e5 2. Nf3 Nc6 3. Bc4 Bc5
+184,Ruy Lopez (Spanish) Other 3rd moves,"1.e4 e5 2. Nf3 Nc6 3. Bb5 d6, Nd4, g6, Nge7"
+185,"Ruy Lopez (Spanish), Classical",1.e4 e5 2. Nf3 Nc6 3. Bb5 Bc5
+186,Ruy Lopez (Spanish) Schliemann,1.e4 e5 2. Nf3 Nc6 3. Bb5 f5
+187,"Ruy Lopez (Spanish), Berlin",1.e4 e5 2. Nf3 Nc6 3. Bb5 Nf6
+188,"Ruy Lopez (Spanish), Exchange",1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6
+189,Ruy Lopez (Spanish) Modern Steinitz,1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6
+190,Ruy Lopez (Spanish) Other 5th moves,"1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.d3, d4, Qe2"
+191,"Ruy Lopez (Spanish), Open",1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Nxe4
+192,Ruy Lopez (Spanish) Moeller and Steinitz Deferred,"1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Bc5, d6"
+193,Ruy Lopez (Spanish) Archangelsk,1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O b5 6. Bb3 Bb7
+194,Ruy Lopez (Spanish) Other 6th moves,"1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Bxc6, Qe2, d4, d3, Nc3"
+195,Ruy Lopez (Spanish) Anti-Marshall,"1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 O-O 8.a4, h3, d4, d3"
+196,Ruy Lopez (Spanish) Marshall Attack,1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 O-O 8.c3 d5
+197,Ruy Lopez (Spanish) Other 9th moves,"1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 d6 8.c3 O-O 9.d4, d3, a4"
+198,"Ruy Lopez (Spanish) Karpov, Smyslov and Kholmov","1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 d6 8.c3 O-O 9.h3 Nd7, h6, Be6"
+199,"Ruy Lopez (Spanish), Breyer",1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 d6 8.c3 O-O 9.h3 Nb8
+200,Ruy Lopez (Spanish) Flohr-Zaitsev,1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 d6 8.c3 O-O 9.h3 Bb7
+201,Ruy Lopez (Spanish) Chigorin (Main Line),1.e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5.O-O Be7 6. Re1 b5 7. Bb3 d6 8.c3 O-O 9.h3 Na5 10. Bc2 c5 11.d4
+202,"English, 1...b6",1.c4 b6
+203,"English, 1...f5",1.c4 f5
+204,"English, 1...c6",1.c4 c6
+205,"English, 1...g6",1.c4 g6
+206,"English, Symmetrical Double Fianchetto",1.c4 c5 2. Nf3 Nf6 3.g3 b6 4. Bg2 Bb7 5.O-O g6
+207,"English, Symmetrical, Hedgehog",1.c4 c5 2. Nf3 Nf6 3.g3 b6 4. Bg2 Bb7 5.O-O e6
+208,"English, Symmetrical, 3.d4",1.c4 c5 2. Nf3 Nf6 3.d4
+209,"English, Symmetrical Other Black 3rd moves","1.c4 c5 2. Nc3 Nf6 3. Nf3 e6, d5, g6, b6"
+210,"English, Symmetrical Four Knights",1.c4 c5 2. Nc3 Nf6 3. Nf3 Nc6
+211,"English, Symmetrical, Main Line",1.c4 c5 2. Nc3 Nc6 3.g3 g6 4. Bg2 Bg7
+212,"English, Symmetrical 1...e6, 2. f3 d5",1.c4 e6 2. Nf3 d5
+213,"English, Symmetrical 1...e6, 2. c3 d5",1.c4 e6 2. Nc3 d5
+214,"English, Flohr-Mikenas",1.c4 e6 2. Nc3 Nf6 3.e4
+215,"English, 1...e6, Main Line",1.c4 e6 2. Nc3 Nf6 3. Nf3
+216,"English, Sicilian Reversed, 2.g3",1.c4 e5 2.g3
+217,"English, Sicilian Reversed Other Black 2nd moves","1.c4 e5 2. Nc3 d6, Bb4"
+218,"English, Sicilian Reversed Four Knights",1.c4 e5 2. Nc3 Nf6 3. Nf3 Nc6
+219,"English, Sicilian Reversed Bremen",1.c4 e5 2. Nc3 Nf6 3.g3
+220,"English, Sicilian Reversed Closed",1.c4 e5 2. Nc3 Nc6
+221,"English, 1... f6, 2.g3",1.c4 Nf6 2.g3
+222,"English, 1... f6, 2. f3 Anglo-Indian",1.c4 Nf6 2. Nf3 g6 3.g3 Bg7 4. Bg2 O-O
+223,"English, 1... f6, 2. c3 Anglo-Indian",1.c4 Nf6 2. Nc3 g6
+224,"Reti, 2.b3",1. Nf3 d5 2.b3
+225,"Reti, 2.c4",1. Nf3 d5 2.c4
+226,"Reti, King's Indian Attack",1. Nf3 d5 2.g3
+227,Bird,1.f4
+228,Nimzowitsch-Larsen,1.b3
+229,Sokolsky,1.b4
+230,Dunst,1. Nc3
