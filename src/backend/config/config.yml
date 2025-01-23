@@ -1,0 +1,15 @@
+app:
+  name: "OpeningTrainer"
+  version: "0.1.0"
+
+http:
+  port: 8080
+
+logger:
+  log_level: "debug"
+
+postgres:
+  pool_max: 10
+
+auth:
+  redirect_url: "http://localhost:8080/auth/callback"

@@ -1,22 +1,16 @@
 package main
 
 import (
-	"backend/internal/handlers"
-	"backend/internal/websocket"
-
+	"backend/config"
+	"backend/internal/app"
 	"log"
-	"net/http"
-
-	"github.com/gorilla/mux"
 )
 
 func main() {
-	r := mux.NewRouter()
-	r.HandleFunc("/hello", handlers.Hello).Methods("GET")
-
-	go websocket.StartServer()
-	log.Println("Starting server on :8080...")
-
-	http.ListenAndServe(":8080", r)
-
+	cfg, err := config.NewConfig()
+	if err != nil {
+		log.Fatalf("Failed to read configuration: %v", err)
+	}
+	cfg.App.Name = "My App"
+	app.Run(cfg)
 }
