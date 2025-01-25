@@ -1,6 +1,8 @@
 package google
 
 import (
+	"fmt"
+
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 )
@@ -27,10 +29,6 @@ func New(opts ...Option) *Google {
 		opt(g)
 	}
 	g.Config.Endpoint = google.Endpoint
-	g.Config.ClientID = g.clientId
-	g.Config.ClientSecret = g.clientSecret
-	g.Config.RedirectURL = g.redirectUrl
-	g.Config.Scopes = g.scopes
-
+	fmt.Printf("Redirect URL: %s\n", g.Config.RedirectURL)
 	return g
 }

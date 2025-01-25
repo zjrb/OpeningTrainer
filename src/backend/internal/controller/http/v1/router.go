@@ -1,11 +1,12 @@
 package v1
 
 import (
+	"backend/internal/usecase"
 	"backend/pkg/logger"
-
-	"github.com/gorilla/mux"
+	"net/http"
 )
 
-func NewRouter(handler *mux.Router, l logger.Interface) {
-	handler.
+func NewRouter(h *http.ServeMux, l logger.Interface, a usecase.AuthUseCase) {
+	newAuthRoutes("/v1/auth", h, a, l)
+	l.Debug("v1 routes registered")
 }

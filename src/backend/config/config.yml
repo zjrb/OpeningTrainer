@@ -5,11 +5,11 @@ app:
 http:
   port: 8080
 
-logger:
+log:
   log_level: "debug"
 
 postgres:
   pool_max: 10
 
 auth:
-  redirect_url: "http://localhost:8080/auth/callback"
+  redirect_url: "http://localhost:8080/v1/auth/google/callback"

@@ -10,14 +10,14 @@ import (
 )
 
 type AuthWebApi struct {
-	*google.Google
+	*oauth2.Config
 }
 
-func New(clientId string, clientSecret string, redirectUrl string) *AuthWebApi {
-	return &AuthWebApi{google.New(google.ClientID(clientId), google.ClientSecret(clientSecret), google.RedirectURL(redirectUrl))}
+func New(g *google.Google) *AuthWebApi {
+	return &AuthWebApi{g.Config}
 }
 func (a *AuthWebApi) GetGoogleAuthUrl() string {
-	return a.Config.AuthCodeURL("state", oauth2.AccessTypeOffline)
+	return a.Config.AuthCodeURL("random")
 }
 func (a *AuthWebApi) Auth(code string) (string, error) {
 	token, err := a.Config.Exchange(context.Background(), code)

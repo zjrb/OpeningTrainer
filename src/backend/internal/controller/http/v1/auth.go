@@ -5,8 +5,6 @@ import (
 	"backend/pkg/logger"
 	"fmt"
 	"net/http"
-
-	"github.com/gorilla/mux"
 )
 
 type authRoutes struct {
@@ -14,13 +12,13 @@ type authRoutes struct {
 	l logger.Interface
 }
 
-func newAuthRoutes(handler *mux.Router, a usecase.AuthUseCase, l logger.Interface) {
+func newAuthRoutes(prefix string, handler *http.ServeMux, a usecase.AuthUseCase, l logger.Interface) {
 	r := &authRoutes{
 		a: a,
 		l: l,
 	}
-	handler.HandleFunc("/auth/google/url", r.getGoogleAuthUrl).Methods("GET")
-	handler.HandleFunc("/auth/google", r.authGoogle).Methods("GET")
+	handler.HandleFunc(prefix+"/google/url", r.getGoogleAuthUrl)
+	handler.HandleFunc(prefix+"/google/callback", r.authGoogle)
 }
 
 func (r *authRoutes) getGoogleAuthUrl(w http.ResponseWriter, req *http.Request) {

@@ -25,24 +25,24 @@ type (
 	}
 
 	Log struct {
-		Level string `env-required:"true" yaml:"level" env:"LOG_LEVEL"`
+		Level string `env-required:"true" yaml:"log_level" env:"LOG_LEVEL"`
 	}
 
 	PG struct {
 		PoolMax int    `env-required:"true" yaml:"pool_max" env:"PG_POOL_MAX"`
-		URL     string `env-required:"true" yaml:"url" env:"PG_URL"`
+		URL     string `env-required:"true"  env:"PG_URL"`
 	}
 
 	Auth struct {
-		GoogleClientID     string `env-required:"true" yaml:"client_id" env:"GOOGLE_CLIENT_ID"`
-		GoogleClientSecret string `env-required:"true" yaml:"client_secret" env:"GOOGLE_CLIENT_SECRET"`
+		GoogleClientID     string `env-required:"true"  env:"GOOGLE_CLIENT_ID"`
+		GoogleClientSecret string `env-required:"true"  env:"GOOGLE_CLIENT_SECRET"`
 		RedirectURL        string `env-required:"true" yaml:"redirect_url" env:"GOOGLE_REDIRECT_URL"`
 	}
 )
 
 func NewConfig() (*Config, error) {
 	cfg := &Config{}
-	err := cleanenv.ReadConfig("config.yml", cfg)
+	err := cleanenv.ReadConfig("./config/config.yml", cfg)
 
 	if err != nil {
 		return nil, fmt.Errorf("failed to read configuration: %v", err)
