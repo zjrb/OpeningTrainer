@@ -1,4 +1,4 @@
-package app
+package main
 
 import (
 	"fmt"
@@ -50,7 +50,9 @@ func main() {
 	}
 	oauthProvider := oauth.NewOauth2google(&authconfig)
 	authService := services.NewAuthService(oauthProvider, userRepo, jwtProvider)
-
+	if authService != nil {
+		logger.Info("AuthService initiated")
+	}
 	select {
 	case s := <-interrupt:
 		logger.Info("app - Run - signal: " + s.String())
