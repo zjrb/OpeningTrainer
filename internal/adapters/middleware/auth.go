@@ -1,17 +1,36 @@
 package middleware
 
-import "net/http"
+import (
+	"context"
+	"net/http"
 
-// AuthMiddleware is a middleware that checks if the user is authenticated
+	"github.com/zjrb/OpeningTrainer/internal/core/domain"
+	"github.com/zjrb/OpeningTrainer/internal/core/services"
+)
+
 type AuthMiddleware struct {
-	Handler http.Handler
+	authService *services.AuthService
 }
 
-func NewAuthMiddleware(handler http.Handler) *AuthMiddleware {
+func NewAuthMiddleware(authService *services.AuthService) *AuthMiddleware {
 	return &AuthMiddleware{
-		Handler: handler,
+		authService: authService,
 	}
 }
-func (m *AuthMiddleware) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	m.Handler.ServeHTTP(w, r)
+
+func (m *AuthMiddleware) AuthMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		token, err := r.Cookie("token")
+		if err != nil {
+			http.Error(w, "Unauthorized", http.StatusUnauthorized)
+			return
+		}
+		usr, err := m.authService.ValidateToken(token.Value)
+		if err != nil {
+			http.Error(w, "Unauthorized", http.StatusUnauthorized)
+			return
+		}
+		ctx := context.WithValue(r.Context(), domain.EmailContextKey, usr.Email)
+		next.ServeHTTP(w, r.WithContext(ctx))
+	})
 }

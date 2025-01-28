@@ -48,6 +48,7 @@ func (h *AuthHandler) GetOAuthCallback() http.Handler {
 		}
 		var expiration = time.Now().Add(24 * time.Hour)
 		cookie := http.Cookie{Name: "token", Value: token, Expires: expiration}
+		h.Logger.Info("token: %s", token)
 		http.SetCookie(w, &cookie)
 		w.Write([]byte("Login success"))
 	})

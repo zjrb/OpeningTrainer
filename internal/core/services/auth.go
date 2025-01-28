@@ -3,6 +3,7 @@ package services
 import (
 	"fmt"
 
+	"github.com/zjrb/OpeningTrainer/internal/core/domain"
 	"github.com/zjrb/OpeningTrainer/internal/core/ports"
 )
 
@@ -44,4 +45,18 @@ func (s *AuthService) Authenticate(code string) (string, error) {
 	}
 	token, err := s.JWTProvider.GenerateToken(data.Email, data.OAuthProvider)
 	return token, nil
+}
+
+func (s *AuthService) ValidateToken(token string) (*domain.User, error) {
+	email, err := s.JWTProvider.ValidateToken(token)
+	if err != nil {
+		fmt.Println("Error validating token: ", err)
+		return nil, err
+	}
+	user, err := s.UserRepo.GetUserByEmail(email)
+	if err != nil {
+		fmt.Println("Error getting user : ", err)
+		return nil, err
+	}
+	return user, nil
 }
