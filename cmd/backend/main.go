@@ -9,6 +9,7 @@ import (
 
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/jwt"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/oauth"
+	"github.com/zjrb/OpeningTrainer/internal/adapters/handler"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/storage/postgres"
 	"github.com/zjrb/OpeningTrainer/internal/config"
 	"github.com/zjrb/OpeningTrainer/internal/core/services"
@@ -32,8 +33,8 @@ func main() {
 	}
 	defer pg.Close()
 
-	handler := http.NewServeMux()
-	httpServer := httpserver.New(handler, httpserver.Port(cfg.HTTP.Port))
+	h := http.NewServeMux()
+	httpServer := httpserver.New(h, httpserver.Port(cfg.HTTP.Port))
 	logger.Debug("Starting http server")
 	interrupt := make(chan os.Signal, 1)
 	signal.Notify(interrupt, os.Interrupt, syscall.SIGTERM)
@@ -46,10 +47,14 @@ func main() {
 		ClientSecret: cfg.Auth.GoogleClientSecret,
 		RedirectURL:  cfg.Auth.RedirectURL,
 		Endpoint:     google.Endpoint,
-		Scopes:       []string{"https://www.googleapis.com/auth/userinfo.email"},
+		Scopes: []string{"https://www.googleapis.com/auth/userinfo.email",
+			"https://www.googleapis.com/auth/userinfo.profile"},
 	}
 	oauthProvider := oauth.NewOauth2google(&authconfig)
 	authService := services.NewAuthService(oauthProvider, userRepo, jwtProvider)
+	authHandler := handler.NewAuthHandler(authService, logger)
+	handler.AddRoutes(h, authHandler)
+
 	if authService != nil {
 		logger.Info("AuthService initiated")
 	}
