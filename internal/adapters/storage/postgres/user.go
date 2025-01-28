@@ -30,11 +30,11 @@ func (r *UserRepositoryPostgres) GetUserByEmail(email string) (*domain.User, err
 	return &user, nil
 }
 
-func (r *UserRepositoryPostgres) CreateUser(user *domain.User) error {
+func (r *UserRepositoryPostgres) CreateUser(user *domain.OAuthResponse) error {
 	_, err := r.Pool.Exec(context.Background(), `
-		INSERT INTO users (email, name)
-		VALUES ($1, $2)
-	`, user.Email, user.Name)
+		INSERT INTO users (name, email, oauth_provider, oauth_provider_id, profile_picture) 
+		VALUES ($1, $2, $3, $4, $5)
+	`, user.Name, user.Email, user.OAuthProvider, user.OAuthID, user.ProfilePicture)
 	if err != nil {
 		return err
 	}

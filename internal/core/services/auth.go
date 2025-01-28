@@ -1,6 +1,10 @@
 package services
 
-import "github.com/zjrb/OpeningTrainer/internal/core/ports"
+import (
+	"fmt"
+
+	"github.com/zjrb/OpeningTrainer/internal/core/ports"
+)
 
 type AuthService struct {
 	OAuthProvider ports.OAuthProvider
@@ -20,10 +24,24 @@ func NewAuthService(
 	}
 }
 
-func (s *AuthService) GetOAuthPageURL() string {
-	return "Fix me"
+func (s *AuthService) GetOAuthPageURL() (string, string) {
+	state := s.OAuthProvider.GenerateStateOauthCookie()
+	return s.OAuthProvider.GetAuthURL(state), state
 }
 
 func (s *AuthService) Authenticate(code string) (string, error) {
-	return "Fix me", nil
+	data, err := s.OAuthProvider.Authenticate(code)
+	if err != nil {
+		return "", err
+	}
+	_, err = s.UserRepo.GetUserByEmail(data.Email)
+	if err != nil {
+		if error := s.UserRepo.CreateUser(data); error != nil {
+			fmt.Println("Error creating user: ", error)
+			return "", error
+		}
+		return "", nil
+	}
+	token, err := s.JWTProvider.GenerateToken(data.Email, data.OAuthProvider)
+	return token, nil
 }

@@ -18,7 +18,3 @@ func NewUserService(userRepo ports.UserRepository) *UserService {
 func (s *UserService) GetUserByEmail(email string) (*domain.User, error) {
 	return s.userRepo.GetUserByEmail(email)
 }
-
-func (s *UserService) CreateUser(user *domain.User) error {
-	return s.userRepo.CreateUser(user)
-}
