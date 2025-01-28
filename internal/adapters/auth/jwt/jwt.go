@@ -1,6 +1,7 @@
 package jwt
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
@@ -24,13 +25,18 @@ func (j *JWT) GenerateToken(email string, oauthprovider string) (string, error) 
 		"exp":           time.Now().Add(time.Hour * 24).Unix(),
 		"iss":           "OpeningTrainer",
 	}
-	tokenString, err := token.SignedString(j.secret)
+	tokenString, err := token.SignedString([]byte(j.secret))
+	if err != nil {
+		fmt.Println("Error signing token: ", err)
+		return "", err
+	}
+
 	return tokenString, err
 }
 
 func (j *JWT) ValidateToken(token string) (string, error) {
 	t, err := jwt.Parse(token, func(token *jwt.Token) (interface{}, error) {
-		return j.secret, nil
+		return []byte(j.secret), nil
 	})
 	if err != nil {
 		return "", err

@@ -10,3 +10,6 @@ type User struct {
 	CreatedAt      string
 	UpdatedAt      string
 }
+type contextKey string
+
+const EmailContextKey = contextKey("email")

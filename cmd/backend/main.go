@@ -10,6 +10,7 @@ import (
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/jwt"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/oauth"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/handler"
+	"github.com/zjrb/OpeningTrainer/internal/adapters/middleware"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/storage/postgres"
 	"github.com/zjrb/OpeningTrainer/internal/config"
 	"github.com/zjrb/OpeningTrainer/internal/core/services"
@@ -53,7 +54,8 @@ func main() {
 	oauthProvider := oauth.NewOauth2google(&authconfig)
 	authService := services.NewAuthService(oauthProvider, userRepo, jwtProvider)
 	authHandler := handler.NewAuthHandler(authService, logger)
-	handler.AddRoutes(h, authHandler)
+	authMiddleware := middleware.NewAuthMiddleware(authService)
+	handler.AddRoutes(h, authHandler, authMiddleware)
 
 	if authService != nil {
 		logger.Info("AuthService initiated")
