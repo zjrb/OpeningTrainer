@@ -51,11 +51,16 @@ func main() {
 		Scopes: []string{"https://www.googleapis.com/auth/userinfo.email",
 			"https://www.googleapis.com/auth/userinfo.profile"},
 	}
+	openingRepo := postgres.NewOpeningRepoPostgres(pg.Pool)
 	oauthProvider := oauth.NewOauth2google(&authconfig)
+
+	openingService := services.NewOpeningService(openingRepo)
 	authService := services.NewAuthService(oauthProvider, userRepo, jwtProvider)
 	authHandler := handler.NewAuthHandler(authService, logger)
+	openingHandler := handler.NewOpeningHandler(openingService)
 	authMiddleware := middleware.NewAuthMiddleware(authService)
-	handler.AddRoutes(h, authHandler, authMiddleware)
+
+	handler.AddRoutes(h, authHandler, authMiddleware, openingHandler)
 
 	if authService != nil {
 		logger.Info("AuthService initiated")
