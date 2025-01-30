@@ -22,8 +22,11 @@ type JWTProvider interface {
 
 type OpeningRepository interface {
 	GetOpeningByName(name string) ([]domain.Opening, error)
-	//GetOpeningByECO(eco string) (*domain.Opening, error)
-	//GetOpeningByPGN(pgn string) (*domain.Opening, error)
-	//GetOpeningByUCI(uci string) (*domain.Opening, error)
-	//GetOpeningByFEN(fen string) (*domain.Opening, error)
+}
+
+type ChessEngine interface {
+	StartGame(opening string)
+	ProcessMove(move string)
+	MakeMove(position string)
+	MakeRandomMove(position string)
 }
