@@ -19,3 +19,11 @@ type JWTProvider interface {
 	GenerateToken(email string, oauthprovider string) (string, error)
 	ValidateToken(token string) (string, error)
 }
+
+type OpeningRepository interface {
+	GetOpeningByName(name string) ([]domain.Opening, error)
+	//GetOpeningByECO(eco string) (*domain.Opening, error)
+	//GetOpeningByPGN(pgn string) (*domain.Opening, error)
+	//GetOpeningByUCI(uci string) (*domain.Opening, error)
+	//GetOpeningByFEN(fen string) (*domain.Opening, error)
+}

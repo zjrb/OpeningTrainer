@@ -13,3 +13,11 @@ type User struct {
 type contextKey string
 
 const EmailContextKey = contextKey("email")
+
+type Opening struct {
+	OpeningName string
+	ECO         string
+	PGN         string
+	UCI         string
+	FEN         string
+}
