@@ -13,3 +13,5 @@ postgres:
 
 auth:
   redirect_url: "http://localhost:8080/v1/auth/google/callback"
+redis:
+  db: 0

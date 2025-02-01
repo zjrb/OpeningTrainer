@@ -25,8 +25,13 @@ type OpeningRepository interface {
 }
 
 type ChessEngine interface {
-	StartGame(opening string)
-	ProcessMove(move string)
-	MakeMove(position string)
-	MakeRandomMove(position string)
+	StartGame(opening []string, white bool) string
+	PushMove(opening []string, white bool, moveNum int) (string, error)
+	ProcessMove(opening []string, white bool, moveNum int, move string) (string, error)
+	// MakeRandomMove(position string)
+}
+
+type GameCache interface {
+	GetOpening(key string) (*domain.GameSesion, error)
+	SetOpening(key string, opening *domain.GameSesion) error
 }

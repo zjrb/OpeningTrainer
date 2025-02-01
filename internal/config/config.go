@@ -8,12 +8,13 @@ import (
 
 type (
 	Config struct {
-		App  `yaml:"app"`
-		HTTP `yaml:"http"`
-		Log  `yaml:"log"`
-		PG   `yaml:"postgres"`
-		Auth `yaml:"auth"`
-		JWT  `yaml:"jwt"`
+		App   `yaml:"app"`
+		HTTP  `yaml:"http"`
+		Log   `yaml:"log"`
+		PG    `yaml:"postgres"`
+		Auth  `yaml:"auth"`
+		JWT   `yaml:"jwt"`
+		REDIS `yaml:"redis"`
 	}
 
 	App struct {
@@ -41,6 +42,10 @@ type (
 	}
 	JWT struct {
 		Secret string `env-required:"true" env:"JWT_SECRET"`
+	}
+	REDIS struct {
+		Password string `env-required:"true" env:"REDIS_PASS"`
+		Address  string `env-required:"true" env:"REDIS_ADDR"`
 	}
 )
 
