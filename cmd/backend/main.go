@@ -7,11 +7,13 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/redis/go-redis/v9"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/jwt"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/oauth"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/handler"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/middleware"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/storage/postgres"
+	rediscli "github.com/zjrb/OpeningTrainer/internal/adapters/storage/redis"
 	"github.com/zjrb/OpeningTrainer/internal/config"
 	"github.com/zjrb/OpeningTrainer/internal/core/services"
 	"github.com/zjrb/OpeningTrainer/internal/logger"
@@ -39,7 +41,12 @@ func main() {
 	logger.Debug("Starting http server")
 	interrupt := make(chan os.Signal, 1)
 	signal.Notify(interrupt, os.Interrupt, syscall.SIGTERM)
-
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     cfg.REDIS.Address,
+		Password: cfg.REDIS.Password,
+		DB:       0,
+	})
+	rediscli.NewRedisRepo(rdb)
 	// Building AuthService
 	jwtProvider := jwt.NewJWT(cfg.JWT.Secret)
 	userRepo := postgres.NewUserRepositoryPostgres(pg.Pool)

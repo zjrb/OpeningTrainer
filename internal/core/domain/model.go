@@ -21,3 +21,10 @@ type Opening struct {
 	UCI         string
 	FEN         string
 }
+
+type GameSesion struct {
+	Opening  []int  `redis:"opening"`
+	White    bool   `redis:"white"`
+	MoveNum  int    `redis:"moveNum"`
+	LastMove string `redis:"lastMove"`
+}
