@@ -15,7 +15,7 @@ func NewRedisRepo(rediscli *redis.Client) *RedisCache {
 	return &RedisCache{cli: rediscli}
 }
 
-func (r *RedisCache) SetOpening(key string, opening *domain.GameSesion) error {
+func (r *RedisCache) SetOpening(key string, opening *domain.GameSession) error {
 	if _, err := r.cli.Pipelined(context.Background(), func(rdb redis.Pipeliner) error {
 		rdb.HSet(context.Background(), key, "openining", opening.Opening)
 		rdb.HSet(context.Background(), key, "white", opening.White)
@@ -28,8 +28,8 @@ func (r *RedisCache) SetOpening(key string, opening *domain.GameSesion) error {
 	return nil
 }
 
-func (r *RedisCache) GetOpening(key string) (*domain.GameSesion, error) {
-	var gameSesh domain.GameSesion
+func (r *RedisCache) GetOpening(key string) (*domain.GameSession, error) {
+	var gameSesh domain.GameSession
 	if err := r.cli.HGetAll(context.Background(), key).Scan(&gameSesh); err != nil {
 		return nil, err
 	}

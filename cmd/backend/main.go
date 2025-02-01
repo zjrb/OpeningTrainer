@@ -10,6 +10,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/jwt"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/auth/oauth"
+	"github.com/zjrb/OpeningTrainer/internal/adapters/engine"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/handler"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/middleware"
 	"github.com/zjrb/OpeningTrainer/internal/adapters/storage/postgres"
@@ -46,7 +47,7 @@ func main() {
 		Password: cfg.REDIS.Password,
 		DB:       0,
 	})
-	rediscli.NewRedisRepo(rdb)
+	cache := rediscli.NewRedisRepo(rdb)
 	// Building AuthService
 	jwtProvider := jwt.NewJWT(cfg.JWT.Secret)
 	userRepo := postgres.NewUserRepositoryPostgres(pg.Pool)
@@ -66,7 +67,10 @@ func main() {
 	authHandler := handler.NewAuthHandler(authService, logger)
 	openingHandler := handler.NewOpeningHandler(openingService)
 	authMiddleware := middleware.NewAuthMiddleware(authService)
-
+	chessEngine := engine.NewChessEngine()
+	chessService := services.NewChessService(chessEngine, cache, logger)
+	websocketHandler := handler.NewWebSocketHandler(chessService, logger)
+	h.HandleFunc("/ws", websocketHandler.HandleConnections())
 	handler.AddRoutes(h, authHandler, authMiddleware, openingHandler)
 
 	if authService != nil {
