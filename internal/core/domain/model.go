@@ -22,9 +22,10 @@ type Opening struct {
 	FEN         string
 }
 
-type GameSesion struct {
-	Opening  []int  `redis:"opening"`
-	White    bool   `redis:"white"`
-	MoveNum  int    `redis:"moveNum"`
-	LastMove string `redis:"lastMove"`
+type GameSession struct {
+	Opening  []string `redis:"opening" json:"opening"`
+	White    bool     `redis:"white" json:"white"`
+	MoveNum  int      `redis:"moveNum" json:"moveNum"`
+	LastMove string   `redis:"lastMove" json:"lastMove"`
+	Message  string   `json:"message"`
 }
