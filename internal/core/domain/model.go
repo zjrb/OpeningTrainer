@@ -20,6 +20,7 @@ type Opening struct {
 	PGN         string
 	UCI         string
 	FEN         string
+	MoveArray   []string
 }
 
 type GameSession struct {
@@ -28,4 +29,12 @@ type GameSession struct {
 	MoveNum  int      `redis:"moveNum" json:"moveNum"`
 	LastMove string   `redis:"lastMove" json:"lastMove"`
 	Message  string   `json:"message"`
+}
+
+type GameSessionDB struct {
+	ID         int
+	OpeningID  int
+	UserID     int
+	WrongMoves int
+	Accuracy   float32
 }

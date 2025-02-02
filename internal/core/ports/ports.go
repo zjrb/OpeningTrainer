@@ -22,6 +22,7 @@ type JWTProvider interface {
 
 type OpeningRepository interface {
 	GetOpeningByName(name string) ([]domain.Opening, error)
+	GetSingleOpeningById(id int) (*domain.Opening, error)
 }
 
 type ChessEngine interface {
@@ -31,4 +32,10 @@ type ChessEngine interface {
 type GameCache interface {
 	GetOpening(key string) (*domain.GameSession, error)
 	SetOpening(key string, opening *domain.GameSession) error
+}
+
+type GameSessionRepo interface {
+	GetGameSession(id int) (*domain.GameSessionDB, error)
+	CreateGameSession(gameSesh *domain.GameSessionDB) error
+	UpdateGameSession(gameSesh *domain.GameSessionDB) error
 }

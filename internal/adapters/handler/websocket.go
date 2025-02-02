@@ -41,7 +41,6 @@ func (ws *WebsocketHandler) HandleConnections() http.HandlerFunc {
 		if err != nil {
 			ws.l.Error("Error", err)
 		}
-		ws.l.Info("HANDLING A CONNECTION")
 		defer conn.Close()
 		ws.mu.Lock()
 		ws.clients[conn] = true

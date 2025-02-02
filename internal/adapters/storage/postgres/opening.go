@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/zjrb/OpeningTrainer/internal/core/domain"
@@ -37,4 +38,16 @@ func (r *OpeningRepoPostgres) GetOpeningByName(name string) ([]domain.Opening, e
 	}
 
 	return openings, nil
+}
+
+func (r *OpeningRepoPostgres) GetSingleOpeningById(id int) (*domain.Opening, error) {
+	var opening domain.Opening
+	err := r.pool.QueryRow(context.Background(), `
+	SELECT opening_name, eco, pgn, uci, fen, move_arry
+	FROM openings
+	WHERE id = $1`, id, &opening.OpeningName, &opening.ECO, &opening.PGN, &opening.UCI, &opening.MoveArray)
+	if err != nil {
+		return nil, fmt.Errorf("problem with the sql query")
+	}
+	return &opening, nil
 }
